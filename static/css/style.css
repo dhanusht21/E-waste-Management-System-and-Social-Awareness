@@ -1,0 +1,30 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.hero {
+    background: linear-gradient(to right, #a3aed8, #20c997);
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.feature-card {
+    transition: transform 0.3s;
+}
+
+.feature-card:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background: #198754;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    margin-top: 40px;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+<nav class="navbar navbar-dark bg-success">
+  <div class="container-fluid">
+    <span class="navbar-brand">User Dashboard</span>
+    <a href="/" class="btn btn-light btn-sm">Home</a>
+  </div>
+</nav>
+
+<div class="container mt-5">
+
+  <!-- STATS -->
+  <div class="row text-center mb-4">
+    <div class="col-md-4">
+      <div class="card shadow p-4">
+        <h6>Total Reports</h6>
+        <h2>{{ total }}</h2>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card shadow p-4">
+        <h6>Pending Actions</h6>
+        <h2 class="text-warning">{{ pending }}</h2>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card shadow p-4">
+        <h6>Recycled</h6>
+        <h2 class="text-success">{{ recycled }}</h2>
+      </div>
+    </div>
+  </div>
+
+  <!-- ACTION CARDS -->
+  <div class="row g-4">
+
+    <!-- SUBMIT -->
+    <div class="col-md-6">
+      <div class="card shadow border-start border-4 border-secondary h-100">
+        <div class="card-body">
+          <h4>📝 Report E-Waste</h4>
+          <p class="text-muted">
+            Inform us about unused or damaged electronic items.
+            This helps in awareness and planning.
+          </p>
+          <a href="/user/submit" class="btn btn-outline-secondary w-100">
+            Report Item
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- RECYCLE -->
+    <div class="col-md-6">
+      <div class="card shadow border-start border-4 border-success h-100">
+        <div class="card-body">
+          <h4>♻ Request Recycling</h4>
+          <p class="text-muted">
+            Request collection and proper recycling of your e-waste.
+            This will be processed by the admin.
+          </p>
+          <a href="/user/recycle" class="btn btn-success w-100">
+            Request Pickup
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- EXTRA LINKS -->
+  <div class="row mt-4 text-center">
+    <div class="col-md-4 mb-2">
+      <a href="/user/track" class="btn btn-primary w-100">📦 Track Requests</a>
+    </div>
+    <div class="col-md-4 mb-2">
+      <a href="/user/stats" class="btn btn-warning w-100">📊 Environmental Impact</a>
+    </div>
+    <div class="col-md-4 mb-2">
+      <a href="/awareness" class="btn btn-dark w-100">🌍 Awareness</a>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
