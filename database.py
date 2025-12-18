@@ -42,7 +42,7 @@ CREATE TABLE IF NOT EXISTS items (
 # DEFAULT ADMIN
 c.execute("""
 INSERT OR IGNORE INTO users (id, username, password, role)
-VALUES (1, 'admin', 'admin123', 'admin')
+VALUES (1, 'admin', 'admin@123', 'admin')
 """)
 
 # DEFAULT CATEGORIES
